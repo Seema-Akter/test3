@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			display: flex;
+		}
+		.logo{
+			width: 30%;
+			background-color: #808080;
+		}
+		.menu{
+			width: 68%;
+			background-color: #808080;
+			margin-left: 2%;
+		}
+
+		.logo h1, .menu h1{
+			font-weight: 900;
+			padding-left: 10px;
+			font-size: 39px;
+		}
+		.main-area{
+			width: 100%;
+			margin-top: 30px;
+			display: flex;
+		}
+		.middle{
+			width: 50%;
+			background-color: #BBBBBB;
+			height: 500px;
+		}
+
+		.left{
+			width: 25%;
+			background-color: #AAAAAA;
+			height: 500px;
+		}
+		.right{
+			width: 25%;
+			background-color: #CCCCCC;
+			height: 500px;
+		}
+		.middle h2, .left h2, .right h2{
+			padding-left: 15px;
+		}
+		footer{
+			background-color: #F1F1F1;
+		}
+		footer h2{
+			background-color: #F1F1F1;
+			margin: 0;
+			padding: 50px 0;
+			text-align: center;
+			font-size: 29px;
+		}
+
+
+
+
+		/*==================responsive design===============*/
+		@media only screen and (max-width: 952px) {
+
+		.main-area{
+			display: block;
+		}
+		.middle{
+			width: 50%;
+			overflow: hidden;
+		}	
+		.left{
+			width: 50%;
+			float: left;
+		}
+		.right{
+			width: 100%;
+			clear: both;
+		}
+		section h2{
+			margin: 0;
+			padding-top: 15px;
+		}
+		}
+		@media only screen and (max-width: 768px) {
+
+		.middle{
+			width: 100%;
+			float: none;
+		}	
+		.left{
+			width: 100%;
+			float: none;
+		}
+		.right{
+			width: 100%;
+		}
+
+		.logo{
+			width: 50%;
+		}
+		.menu{
+			width: 50%;
+		}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h1>logo</h1>
+		</div>
+		<div class="menu">
+			<h1>menu</h1>
+		</div>
+	</header>
+	<div class="main-area">
+		<section class="left">
+			<h2>Column</h2>
+		</section>
+		<section class="middle">
+			<h2>Column</h2>
+		</section>
+		<section class="right">
+			<h2>Column</h2>
+		</section>
+	</div>
+	<footer>
+		<h2>Footer</h2>
+	</footer>
+</body>
+</html>
